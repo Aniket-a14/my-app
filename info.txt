@@ -24,7 +24,10 @@ put this command in the terminal to create a new Next.js app:
    npm run dev
    ```
 
-These will be shown
+
+
+
+These will be shown while installing
 
 npx create-next-app@latest my-app
 Need to install the following packages:
