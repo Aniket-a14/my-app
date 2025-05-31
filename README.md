@@ -1,4 +1,4 @@
-Now if you have copied the code, from github, Pallavi from my github or yours, then run this code in your terminal:
+Now if you have copied the code, from github from my github or yours, then run this code in your terminal:
 
 npm install
 
