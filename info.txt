@@ -12,6 +12,8 @@ React is maintained by Facebook and a community of individual developers and com
 React is widely used in web development and has become one of the most popular libraries for building modern web applications. It is often used in conjunction with other libraries and frameworks, such as Next.js for server-side rendering and React Native for mobile app development.
 
 
+Pallavi after learning all these create a new folder on you desktop, then open it by shift+right click and open it with open with VScodse, and then follow these steps
+
 How to Use React
 To use React, you typically follow these steps: 
 1. **Set Up Your Environment**: We can create a new React application using Next.js, which is framework
