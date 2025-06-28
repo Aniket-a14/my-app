@@ -1,12 +1,12 @@
-import Navbar from "./Component/Navbar";
-//Navbar component is imported from the Component directory.
+import EffectExample from "./Component/EffectEaxmple";
+import StateExample from "./Component/StateExample";
 
 
 export default function Home() {
   return (
     <div>
-      Hi I am home page
-      <Navbar/>
+      <StateExample />
+      <EffectExample />
     </div>
   );
 }
