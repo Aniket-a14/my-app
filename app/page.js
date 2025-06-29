@@ -1,10 +1,12 @@
 import EffectExample from "./Component/EffectEaxmple";
 import StateExample from "./Component/StateExample";
+import RefExample from "./Component/RefExample";
 
 
 export default function Home() {
   return (
     <div>
+      <RefExample/>
       <StateExample />
       <EffectExample />
     </div>
