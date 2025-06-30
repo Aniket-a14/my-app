@@ -45,6 +45,13 @@ Here,
 - {index + 1}: {movie} displays the movie number and name.
 
 The map function helps us render a list of items dynamically in React.
+
+About the "key" prop:
+- In React, when rendering lists using map, you must provide a unique key prop to each list item.
+- The key helps React identify which items have changed, are added, or are removed.
+- Using the index as a key is common for static lists, but for dynamic lists (where items can be reordered or deleted), a unique id is better.
+- Example: <li key={index}>...</li>
+- Always add a key prop to avoid warnings and to help React optimize performance.
 */
 
 
