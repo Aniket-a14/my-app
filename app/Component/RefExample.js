@@ -21,33 +21,43 @@ export default function RefExample() {
     )
 };
 
+// --- Explanation of useRef --
 
-// 'use client';
+/*
+useRef is a React Hook that lets you create a mutable reference which persists across re-renders. 
+Unlike useState, updating a ref does NOT cause the component to re-render.
 
-// import { useRef } from 'react';
+Syntax:
+const myRef = useRef(initialValue);
 
-// export default function RefExample() {
-//   const countRef = useRef(0);
+- myRef.current holds the value.
+- You can update myRef.current directly.
 
-//   console.log('🔄 Component rendered');
+Example (from the commented code above):
 
-//   const handleClick = () => {
-//     countRef.current += 1;
-//     console.log('🧮 Ref Count:', countRef.current);
-//   };
+import { useRef } from 'react';
 
-//   return (
-//     <div className="p-6 text-center min-h-screen flex flex-col justify-center          items-center  bg-red-100 text-black">
-//       <h1 className="text-2xl font-bold mb-4">useRef No Re-render Example</h1>
-//       <p className="text-lg mb-2">
-//         Ref Count (check console): {countRef.current}
-//       </p>
-//       <button
-//         onClick={handleClick}
-//         className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
-//       >
-//         Increment Ref
-//       </button>
-//     </div>
-//   );
-// }
+export default function RefExample() {
+  const countRef = useRef(0);
+
+  console.log('Component rendered');
+
+  const handleClick = () => {
+    countRef.current += 1;
+    console.log('Ref Count:', countRef.current);
+  };
+
+  return (
+    <div>
+      <p>Ref Count (check console): {countRef.current}</p>
+      <button onClick={handleClick}>Increment Ref</button>
+    </div>
+  );
+}
+
+Explanation:
+- countRef is a ref object with an initial value of 0.
+- When you click the button, countRef.current increases, but the component does NOT re-render.
+- The updated value is visible in the console, but not on the screen unless you trigger a re-render.
+- useRef is useful for storing values that don’t need to trigger a UI update, like timers, DOM nodes, or previous
+*/
