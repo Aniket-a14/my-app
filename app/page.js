@@ -2,11 +2,13 @@ import EffectExample from "./Component/EffectEaxmple";
 import StateExample from "./Component/StateExample";
 import RefExample from "./Component/RefExample";
 import MapExample from "./Component/MapExample";
+import ConExample from "./Component/ConExample";
 
 
 export default function Home() {
   return (
     <div>
+      <ConExample/>
       <MapExample/>
       <RefExample/>
       <StateExample />
