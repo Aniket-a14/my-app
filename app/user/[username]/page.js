@@ -1,16 +1,31 @@
-export default async function UserProfile(props) {
+export default async function UserPage(props) {
   const params = await props.params;
-  const username = params?.username;
+  const username =  params?.username
+  const email = params?.email
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white">
-      <h1 className="text-3xl font-bold mb-4">User Profile</h1>
-      <p className="text-xl">
-        Hello, <span className="font-semibold text-blue-600">{username}</span>!
-      </p>
+    <div className="p-6">
+      <h1 className="text-2xl">Welcome, {username}!</h1>
+      <p>Your email is {email}</p>
     </div>
-  );
+  )
 }
+
+
+
+// export default async function UserProfile(props) {
+//   const params = await props.params;
+//   const username = params?.username;
+
+//   return (
+//     <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white">
+//       <h1 className="text-3xl font-bold mb-4">User Profile</h1>
+//       <p className="text-xl">
+//         Hello, <span className="font-semibold text-blue-600">{username}</span>!
+//       </p>
+//     </div>
+//   );
+// }
 
 // --- Explanation ---
 /*
